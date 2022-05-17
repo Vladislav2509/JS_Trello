@@ -1,0 +1,281 @@
+/* header */
+.cap {
+    width: 100%;
+    max-width: 1100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: royalblue;  
+}
+
+.trello {
+    margin-left: 50px;
+}
+
+
+/* main */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;     
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.block {
+    width: 300px;
+    height: 530px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+.item1 {
+    width: 300px;
+    height: 80px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.todo {
+    margin-left: 15px;
+}
+
+.number {
+    margin-right: 25px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.item2 {
+    width: 280px;
+    height: 150px;
+    background-color: greenyellow;
+    border-radius: 15px;
+    margin-top: 15px; 
+}
+
+ul{
+    position: absolute;
+}
+
+li {
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-left: 150px;
+    
+}
+
+.buttons2 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.buttons3 {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.arrow {
+    width: 20px;
+    height: 40px;
+    margin-left: 98px;
+    margin-top: 30px;
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.arrow2 {
+    width: 20px;
+    height: 40px;
+    margin-left: 98px;
+    margin-top: 30px;
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.time{
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+.time2 {
+    margin-top: 85px;
+    margin-left: 105px;
+}
+
+.time3 {
+    margin-top: 85px;
+    margin-left: 25px;
+}
+
+.item3 {
+    width: 280px;
+    height: 150px;
+    background-color: red;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.add {
+    width: 300px;
+    height: 80px;
+    background-color: green;
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.itemDeleteAll {
+    width: 300px;
+    height: 80px;
+    background-color: green;
+    border-radius: 15px;
+    margin-top: 205px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* card */
+
+.card {
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    background-color: greenyellow;
+    border-radius: 15px;
+    margin-top: 470px;
+    margin-right: 700px;
+    display: none;
+}
+
+.card2 {
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    background-color: greenyellow;
+    border-radius: 15px;
+    margin-right: 700px; 
+    display: none;
+}
+
+.textarea {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+ .textarea2 {
+    position: absolute;
+    width: 210px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 60px;
+    margin-left: 20px;
+
+} 
+
+.select {
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    margin-top: 170px;
+    margin-left: 20px;
+    border-radius: 5px;
+    
+}
+
+.buttonsOfCards {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 140px;
+
+}
+
+.cancel {
+    border-radius: 3px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.confirm {
+    border-radius: 3px;
+    background-color: aqua;
+    cursor: pointer;
+    
+}
+
+
+/* warning */
+
+.warning {
+    width: 210px;
+    height: 110px;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color: greenyellow;
+
+    display: none;
+}
+
+.warning2 {
+    width: 210px;
+    height: 110px;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color: greenyellow;
+
+    display: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
