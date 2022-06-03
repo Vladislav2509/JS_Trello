@@ -1,5 +1,13 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(./земля.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
 /* header */
-.cap {
+.head {
     width: 100%;
     max-width: 1100px;
     height: 100px;
@@ -7,11 +15,14 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    background-color: royalblue;  
+    background-color: #4049DB;  
+    
 }
 
 .trello {
     margin-left: 50px;
+    font-family: 'Jura';
+    font-size: 24px;
 }
 
 
@@ -29,17 +40,21 @@
     margin-top: 30px;
 }
 
+/* block__one */
 .block {
     width: 300px;
     height: 530px;
     border-radius: 15px;
-    background-color: aqua;
+    background-color: #1678F3;
+    background: url(./stars.jpg) no-repeat;
+    border-radius: 50px;
+    
 }
 
 .item1 {
     width: 300px;
     height: 80px;
-    background-color: green;
+    background-color: #20A82F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +63,12 @@
 
 .todo {
     margin-left: 15px;
+    color: white;
 }
 
 .number {
     margin-right: 25px;
+    color: white;
 }
 
 .items {
@@ -63,7 +80,7 @@
 .item2 {
     width: 280px;
     height: 150px;
-    background-color: greenyellow;
+    background-color: #FF4420;
     border-radius: 15px;
     margin-top: 15px; 
 }
@@ -83,14 +100,26 @@ li {
     
 }
 
-.buttons2 {
-    margin-top: 10px;
-    margin-left: 120px;
+.edit1 {
+    border: none;
+    width: 50px;
+    height: 30px;
+    background-color: #1678F3;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    flex-shrink: 0; 
 }
 
-.buttons3 {
-    margin-top: 10px;
-    margin-left: 200px;
+.delete__card {
+    border: none;
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    flex-shrink: 0; 
 }
 
 .arrow {
@@ -98,21 +127,11 @@ li {
     height: 40px;
     margin-left: 98px;
     margin-top: 30px;
-    background-image: url(arrow.png);
+    background-image: url(./arrow.png);
+    background-color: #1CA633;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.arrow2 {
-    width: 20px;
-    height: 40px;
-    margin-left: 98px;
-    margin-top: 30px;
-    background-image: url(arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    border: none;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -122,115 +141,70 @@ li {
     margin-left: 75px;
 }
 
-.time2 {
-    margin-top: 85px;
-    margin-left: 105px;
-}
-
-.time3 {
-    margin-top: 85px;
-    margin-left: 25px;
-}
-
 .item3 {
     width: 280px;
     height: 150px;
-    background-color: red;
+    background-color: #64B61A;
     border-radius: 15px;
     margin-top: 15px;
+}
+
+.edit2 {
+    border: none;
+    width: 50px;
+    height: 30px;
+    background-color: #1678F3;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    flex-shrink: 0; 
+}
+
+.arrow2 {
+    width: 20px;
+    height: 40px;
+    margin-left: 98px;
+    margin-top: 30px;
+    background-image: url(./arrow.png);
+    background-color: #1CA633;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .add {
     width: 300px;
     height: 80px;
-    background-color: green;
+    background-color: #F78B0B;
+    color: white;
+    font-family: 'Jura';
+    border: none;
     border-radius: 15px;
     margin-top: 40px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.itemDeleteAll {
-    width: 300px;
-    height: 80px;
-    background-color: green;
-    border-radius: 15px;
-    margin-top: 205px;
-    font-size: 16px;
-    cursor: pointer;
-}
+/* warning */
 
-/* card */
-
-.card {
-    position: absolute;
-    width: 280px;
-    height: 200px;
-    background-color: greenyellow;
-    border-radius: 15px;
-    margin-top: 470px;
-    margin-right: 700px;
-    display: none;
-}
-
-.card2 {
-    position: absolute;
-    width: 280px;
-    height: 200px;
-    background-color: greenyellow;
-    border-radius: 15px;
-    margin-right: 700px; 
-    display: none;
-}
-
-.textarea {
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    
-    margin-top: 20px;
-    margin-left: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-
- .textarea2 {
+.warning {
     position: absolute;
     width: 210px;
-    height: 80px;
+    height: 110px;
+    margin-top: 490px;
+    border-radius: 15px;
+    background: url(./stars.jpg);
+    background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    margin-top: 60px;
-    margin-left: 20px;
-
-} 
-
-.select {
-    position: absolute;
-    width: 90px;
-    height: 20px;
-    margin-top: 170px;
-    margin-left: 20px;
-    border-radius: 5px;
-    
+    display: none;
 }
 
-.buttonsOfCards {
-    position: absolute;
-    margin-top: 170px;
-    margin-left: 140px;
-
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .cancel {
@@ -242,21 +216,165 @@ li {
 .confirm {
     border-radius: 3px;
     background-color: aqua;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+/* card__one */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin-top: -450px;
+    margin-left: -800px;
+    display: none;
+}
+
+.boards {
+    display: flex;
+    width: 100%;  
+}
+
+.boards__item {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    max-width: 250px;
+    width: 100%;
+    background-color: gray;
+    margin: 0 15px;
+    padding: 10px;
+    transition: .3s all ease;
+    border-radius: 3px;   
+}
+
+.title {
+    padding: 5px;
+    color: white;
     
 }
 
+.list {
+    min-height: 40px;
+}
 
-/* warning */
+.list__item {
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 4px 0;
+    cursor: pointer;
+    font-weight: 400px;
+    font-size: 14px;
+    outline: none;
+    border: none;   
+}
 
-.warning {
-    width: 210px;
-    height: 110px;
-    margin-top: 40px;
-    border-radius: 15px;
-    background-color: greenyellow;
-
+.form {
+    border-radius: 3px;
+    margin-top: auto;
     display: none;
+}
+
+.textarea {
+    resize: none;
+    height: 60px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: 230px;
+}
+
+.items__buttons {
+    display: flex;
+}
+
+.add__item-btn {
+    background-color: aqua;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.cancel__item-btn {
+    padding: 0 10px;
+    background-color: red;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+
+.add__card {
+    height: 30px;
+    background: rgba(155, 155, 155, .3);
+    border-radius: 3px;
+    margin-top: 5px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding-left: 10px;
+    color: white; 
+    cursor: pointer;
+
+}
+
+span {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* block__two */
+.buttons2 {
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.time2 {
+    margin-top: 85px;
+    margin-left: 105px;
+}
+
+/* block__three */
+.buttons3 {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.time3 {
+    margin-top: 85px;
+    margin-left: 25px;
+}
+
+.itemDeleteAll {
+    width: 300px;
+    height: 80px;
+    background-color: #DE173C;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 205px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .warning2 {
@@ -264,18 +382,32 @@ li {
     height: 110px;
     margin-top: 40px;
     border-radius: 15px;
-    background-color: greenyellow;
+    background: url(./stars.jpg);
+    background-size: cover;
 
     display: none;
 }
+
+.cancel2 {
+    border-radius: 3px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
 
 h3 {
     text-align: center;
 }
 
-.btn {
+.card2 {
+    
     display: flex;
-    justify-content: center;
-    gap: 10px;
-
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    display: none;
+    margin-left: 50px;
+    
 }
+
+

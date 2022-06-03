@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trello</title>
 </head>
 <body>
     <header>
-        <div class="cap">
+        <div class="head">
             <p class="trello">Trello</p>
         </div>
     </header>
@@ -21,7 +23,7 @@
             <div class="container">
                 <div class="content">
 
-                    <!-- block one -->
+                    <!-- block__one -->
 
                     <div class="block">
                         <div class="item1">
@@ -40,7 +42,7 @@
                                                                 
                                 <div class="buttons">
                                     <button class="edit1">EDIT</button>
-                                    <button>DELETE</button>
+                                    <button class="delete__card">DELETE</button>
                                     <button class="arrow"></button>
                                     <div class="time">Time</div>
                                 </div>    
@@ -57,46 +59,14 @@
                                                                 
                                 <div class="buttons">
                                     <button class="edit2">EDIT</button>
-                                    <button>DELETE</button>
+                                    <button class="delete__card">DELETE</button>
                                     <button class="arrow2"></button>
                                     <div class="time">Time</div>
                                 </div>
                             </div>
 
                             <button class="add">Add todo</button> 
-                            
 
-                            <!-- Card -->
-                            <div class="card">
-                                
-                                    <textarea class="textarea" placeholder="Title"></textarea>
-                                
-                                    <textarea class="textarea2" placeholder="Description"></textarea>
-                                
-                
-                                <select class="select">Select user</select>
-                
-                                <div class="buttonsOfCards">
-                                    <button class="cancel">Cancel</button>
-                                    <button class="confirm">Confirm</button>
-                                </div>
-                            </div>
-
-                            <!-- Card2 -->
-                            <div class="card2">
-                                
-                                    <textarea class="textarea" placeholder="Title"></textarea>
-                                
-                                    <textarea class="textarea2" placeholder="Description"></textarea>
-                                
-                
-                                <select class="select">Select user</select>
-                
-                                <div class="buttonsOfCards">
-                                    <button class="cancel">Cancel</button>
-                                    <button class="confirm">Confirm</button>
-                                </div>
-                            </div>
 
                             <!-- warning -->
                             <div class="warning">
@@ -107,11 +77,36 @@
                                     <button class="confirm">Confirm</button>
                                 </div>
                             </div>
+                            
+
+                            <!-- Card__one -->
+                            <div class="card">
+                                <div class="boards">
+                                    <div class="boards__item">.
+                                        <span contenteditable="true" class="title">Введите название</span>
+                                        <div class="list">
+                                            <div class="list__item" draggable="true">Стартовая карточка</div>
+                                        </div>
+                
+                                        <div class="form">
+                                            <textarea class="textarea" placeholder="Ведите название"></textarea>
+                
+                                            <div class="items__buttons">
+                                                <button class="add__item-btn">Добавить карточку</button>
+                                                <button class="cancel__item-btn">Отмена</button>
+                                            </div>
+                                        </div>
+                
+                                        <div class="add__card"> <span> + </span> Добавить карточку </div>
+                
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div> 
 
-                    <!-- block two -->
+                    <!-- block__two -->
 
                     <div class="block">
                         <div class="item1">
@@ -139,7 +134,7 @@
                         </div>
                     </div>
 
-                    <!-- block three -->
+                    <!-- block__three -->
 
                     <div class="block">
                         <div class="item1">
@@ -157,7 +152,6 @@
                                 </ul>
                                                                 
                                 <div class="buttons3">
-                                    
                                     <button>DELETE</button>
                                     
                                     <div class="time3">Time</div>
@@ -171,7 +165,7 @@
                                 <h3>Warning!</h3>
 
                                 <div class="btn">
-                                    <button class="cancel">Cancel</button>
+                                    <button class="cancel2">Cancel</button>
                                     <button class="confirm">Confirm</button>
                                 </div>
                             </div>
